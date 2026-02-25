@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>카드뉴스 보기</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header row">
+      <div>
+        <a class="back" href="./index.html">← 목록</a>
+        <h1 id="issueTitle" class="title">카드뉴스</h1>
+        <p id="issueMeta" class="sub"></p>
+      </div>
+      <div class="controls">
+        <button id="prevBtn" class="btn" type="button">이전</button>
+        <span id="pageIndicator" class="indicator">- / -</span>
+        <button id="nextBtn" class="btn" type="button">다음</button>
+      </div>
+    </header>
+
+    <section class="viewer" aria-label="카드뉴스 뷰어">
+      <!-- 이미지형 -->
+      <img id="imageViewer" class="card-image" alt="" hidden />
+
+      <!-- PDF형 -->
+      <div id="pdfViewer" class="pdf-box" hidden>
+        <iframe id="pdfFrame" title="카드뉴스 PDF" loading="lazy"></iframe>
+        <p class="hint">
+          PDF가 안 보이면 <a id="pdfLink" href="#" target="_blank" rel="noopener">새 창으로 열기</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>키보드: ← → 로 이동 가능 (이미지형)</small>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>
+    window.CardNews.initViewer();
+  </script>
+</body>
+</html>

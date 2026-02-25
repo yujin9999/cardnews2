@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>카드뉴스</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>카드뉴스</h1>
+      <p class="sub">이전 호를 선택하면 카드뉴스를 1페이지부터 볼 수 있어요.</p>
+    </header>
+
+    <section aria-label="카드뉴스 목록">
+      <ul id="issueList" class="issue-list"></ul>
+    </section>
+
+    <footer class="footer">
+      <small>© 우리동작장애인자립생활센터</small>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+  <script>
+    window.CardNews.initList();
+  </script>
+</body>
+</html>
