@@ -1,0 +1,8 @@
+{
+  "id": "vol24",
+  "title": "vol24 소식지",
+  "date": "2026-03-10",
+  "type": "pdf",
+  "basePath": "assets/vol26-03/",
+  "pages": ["cardnews"]
+}
