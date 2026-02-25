@@ -1,0 +1,11 @@
+01.jpg
+02.jpg
+03.jpg
+{
+  "id": "vol26-03",
+  "title": "vol26-03 카드뉴스",
+  "date": "2026-03-10",
+  "type": "images",
+  "basePath": "assets/vol26-03/",
+  "pages": ["01.jpg", "02.jpg", "03.jpg"]
+}
